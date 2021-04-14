@@ -10,6 +10,7 @@ function min_css_och_js_function() {
     wp_enqueue_style('fontStil', get_template_directory_uri(). '/font-awesome.css');
     wp_enqueue_style('temaStil', get_template_directory_uri(). '/style.css');
 }
+
 /* gör att man kan välja vart man vill lägga menyn */
 add_action('after_setup_theme', 'registrera_meny');
 function registrera_meny() {
