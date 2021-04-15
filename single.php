@@ -1,21 +1,17 @@
 <?php get_header(); ?>
 <main>
 	<section>
-
 		<div class="container">
 			<div class="row">
 				<div id="primary" class="col-xs-12 col-md-9">
-					<h1>BloggIS</h1>
 					<article>
-					<?php
+						<?php
 						while (have_posts()) { //startar loopen
 							the_post();
 						?>
 							<img src="<?php
 										the_post_thumbnail_url(); ?>" />
-							<h2 class="title">
-								<a href="inlagg.html"><?php the_title(); ?></a>
-							</h2>
+							<h1 class="title"><?php the_title(); ?></h1>
 							<ul class="meta">
 								<li>
 									<i class="fa fa-calendar"></i> 1 januari, 2016
@@ -27,22 +23,13 @@
 									<i class="fa fa-tag"></i> <a href="kategori.html">Kategori 1</a>, <a href="kategori.html">Kategori 2</a>
 								</li>
 							</ul>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed sodales mauris. Aliquam felis est, efficitur vel fringilla quis, vehicula quis ex. Phasellus tristique nunc in leo faucibus, a consequat nulla sagittis. In sed mi mi. Praesent condimentum sollicitudin nibh. Vivamus vulputate purus quis volutpat fringilla. Ut tortor libero, semper eget dolor vel, hendrerit tempus dui. Suspendisse dictum efficitur blandit. In porta scelerisque nulla ac placerat.</p>
-							
+							<p><?php the_content(); ?></p>
+
 						<?php
 						} //avslutar loopen
 						?>
-					
-						</article>
-			
-						
-					<nav class="navigation pagination">
-						<h2 class="screen-reader-text">Inläggsnavigering</h2>
-						<a class="prev page-numbers" href="">Föregående</a>
-						<span class="page-numbers current">1</span>
-						<a class="page-numbers" href="">2</a>
-						<a class="next page-numbers" href="">Nästa</a>
-					</nav>
+
+					</article>
 				</div>
 				<aside id="secondary" class="col-xs-12 col-md-3">
 					<div id="sidebar">
@@ -113,7 +100,6 @@
 						</ul>
 					</div>
 				</aside>
-			
 			</div>
 		</div>
 	</section>

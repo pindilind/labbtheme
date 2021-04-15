@@ -1,7 +1,62 @@
 <?php 
+//get_sidebar(); // tänk get_header(); eller get_footer eller...
+//dynamic_sidebar(); //tänk wp_nav_menu()
+
 /* lägger till meny i admin */
 add_theme_support('post-thumbnails');
 add_theme_support('menus');
+add_theme_support('widgets');
+
+
+// register_nav_menu() Skippa område att placera valfri widget
+register_sidebar(
+    [
+        'name' => 'sidebarHome',
+        'description' => 'Demo av widget',
+        'id' => 'sidebarHome'
+    ]
+); 
+
+// register_nav_menu() Skippa område att placera valfri widget
+register_sidebar(
+    [
+        'name' => 'kortOmOssWidget',
+        'description' => 'Demo av widget igen',
+        'id' => 'kortOmossWidget'
+    ]
+); 
+
+register_sidebar(
+    [
+        'name' => 'kontaktWidget',
+        'description' => 'Demo av widget 3',
+        'id' => 'kontaktWidget'
+    ]
+); 
+
+register_sidebar(
+    [
+        'name' => 'socialWidget',
+        'description' => 'Demo av widget 4',
+        'id' => 'socialWidget'
+    ]
+); 
+
+register_sidebar(
+    [
+        'name' => 'labbLogoWidget',
+        'description' => 'Demo av widget 5',
+        'id' => 'labbLogoWidget'
+    ]
+); 
+
+register_sidebar(
+    [
+        'name' => 'sokWidget',
+        'description' => 'Demo av widget 6',
+        'id' => 'sokWidget'
+    ]
+); 
 
 /* lägger till CSS-filer, JS-filer*/
 add_action('wp_enqueue_scripts', 'min_css_och_js_function');

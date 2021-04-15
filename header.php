@@ -24,20 +24,14 @@
                             the_post();
                     
                         ?>
-                        <a class="logo" href="index.html"><?php the_title(); ?>banan</a>
+                        <a class="logo" href="index.html">LABBISEN</a>
                      <?php 
                         }
                     ?>
                     </div>
 
                     <div class="col-sm-6 hidden-xs">
-                        <form id="searchform" class="searchform">
-                            <div>
-                                <label class="screen-reader-text">Sök efter:</label>
-                                <input type="text" />
-                                <input type="submit" value="Sök" />
-                            </div>
-                        </form>
+                    <?php dynamic_sidebar('sokWidget');?>
                     </div>
                     <div class="col-xs-4 text-right visible-xs">
                         <div class="mobile-menu-wrap">
