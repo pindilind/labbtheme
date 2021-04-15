@@ -2,14 +2,14 @@
     <div class="container">
         <div class="row top">
             <div class="col-xs-12 col-sm-6 col-md-4">
-            <?php dynamic_sidebar('kortOmOssWidget');?>
+                <?php dynamic_sidebar('kortOmOssWidget'); ?>
             </div>
             <div class="col-xs-12 col-sm-3 col-md-3 col-md-offset-1">
-                <?php dynamic_sidebar('kontaktWidget');?>
+                <?php dynamic_sidebar('kontaktWidget'); ?>
             </div>
             <div class="col-xs-12 col-sm-3 col-md-3 col-md-offset-1">
                 <ul class="social">
-                <?php dynamic_sidebar('socialWidget');?>
+                    <?php dynamic_sidebar('socialWidget'); ?>
                 </ul>
             </div>
         </div>
@@ -23,7 +23,7 @@
 
 </div>
 
-<script src="<?php echo get_template_directory_uri().'./js/script.js';?>"></script>
+<script src="<?php echo get_template_directory_uri() . './js/script.js'; ?>"></script>
 <?php wp_footer(); ?>
 </body>
 

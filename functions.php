@@ -13,7 +13,8 @@ register_sidebar(
     [
         'name' => 'sidebarHome',
         'description' => 'Demo av widget',
-        'id' => 'sidebarHome'
+        'id' => 'sidebarHome',
+        'before_widget' => ' '
     ]
 ); 
 
@@ -22,7 +23,8 @@ register_sidebar(
     [
         'name' => 'kortOmOssWidget',
         'description' => 'Demo av widget igen',
-        'id' => 'kortOmossWidget'
+        'id' => 'kortOmossWidget',
+        'before_widget' => ' '
     ]
 ); 
 
@@ -30,7 +32,8 @@ register_sidebar(
     [
         'name' => 'kontaktWidget',
         'description' => 'Demo av widget 3',
-        'id' => 'kontaktWidget'
+        'id' => 'kontaktWidget',
+        'before_widget' => ' '
     ]
 ); 
 
@@ -38,7 +41,8 @@ register_sidebar(
     [
         'name' => 'socialWidget',
         'description' => 'Demo av widget 4',
-        'id' => 'socialWidget'
+        'id' => 'socialWidget',
+        'before_widget' => ' '
     ]
 ); 
 
@@ -46,7 +50,8 @@ register_sidebar(
     [
         'name' => 'labbLogoWidget',
         'description' => 'Demo av widget 5',
-        'id' => 'labbLogoWidget'
+        'id' => 'labbLogoWidget',
+        'before_widget' => ' '
     ]
 ); 
 
@@ -54,7 +59,8 @@ register_sidebar(
     [
         'name' => 'sokWidget',
         'description' => 'Demo av widget 6',
-        'id' => 'sokWidget'
+        'id' => 'sokWidget',
+        'before_widget' => ' '
     ]
 ); 
 

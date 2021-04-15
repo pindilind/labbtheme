@@ -24,14 +24,16 @@
                             the_post();
                     
                         ?>
-                        <a class="logo" href="index.html">LABBISEN</a>
+                        <a class="logo" href="index.html">LABB 1</a>
                      <?php 
                         }
                     ?>
                     </div>
 
                     <div class="col-sm-6 hidden-xs">
-                    <?php dynamic_sidebar('sokWidget');?>
+                    
+                        <?php dynamic_sidebar('sokWidget');?>
+                        
                     </div>
                     <div class="col-xs-4 text-right visible-xs">
                         <div class="mobile-menu-wrap">

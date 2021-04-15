@@ -1,12 +1,12 @@
 <?php get_header(); ?>
 
-<main>
-	<section>
 
-		<?php
-		while (have_posts()) { //startar loopen
-			the_post(); 
-		?>
+<?php
+while (have_posts()) { //startar loopen
+	the_post();
+?>
+	<main>
+		<section>
 
 			<div class="container">
 				<div class="row">
@@ -15,22 +15,20 @@
 
 							<img src="<?php echo get_template_directory_uri() . './img/city.jpg' ?>" />
 							<div class="text">
-								<h1><?php
-									the_title();
-									?></h1>
-								<p><?php
-									the_content(); ?></p>
+								<h1><?php the_title();  ?></h1>
+								<p><?php the_content(); ?></p>
 							</div>
 						</div>
 					</div>
 
-				<?php
-				} //avslutar loopen
-				?>
-				
+
+
 				</div>
 			</div>
-	</section>
-</main>
+		</section>
+	</main>
+<?php
+} //avslutar loopen
+?>
 
 <?php get_footer(); ?>
