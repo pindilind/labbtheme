@@ -3,13 +3,13 @@
         <ul>
             <li>
                 <form id="searchform" class="searchform">
-                    <?php get_search_form(); ?>
+                    <?php get_search_form(); ?> <!-- hämtar sökfunktion från db -->
                 </form>
             </li>
         </ul>
         <ul role="navigation">
             <li class="pagenav">
-                
+                <!-- hämtar 3 widget från db -->
                 <?php dynamic_sidebar('sidebarHome');?>
                 
             </li>

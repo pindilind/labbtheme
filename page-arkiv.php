@@ -1,4 +1,4 @@
-<?php get_header();?>
+<?php get_header();?> <!-- hämtar headern från db -->
 		<main>
 			<section>
 				<div class="container">
@@ -72,4 +72,4 @@
 				</div>
 			</section>
 		</main>
-<?php get_footer();?>
+<?php get_footer();?> <!-- hämtar footern från db -->

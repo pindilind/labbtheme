@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header(); ?> <!-- hämtar header från header.php -->
 
 <main>
 	<section>
@@ -9,15 +9,15 @@
 					while (have_posts()) { //startar loopen
 						the_post();
 					?>
-						<h1><?php the_title(); ?></h1>
-						<p><?php the_content(); ?></p>
+						<h1><?php the_title(); ?></h1> <!-- hämtar title från db -->
+						<p><?php the_content(); ?></p> <!-- hämtar text från db -->
 					
 			
 				</div>
 				<aside id="secondary" class="col-xs-12 col-md-3">
 							<ul class="side-menu">
 								<li>
-								<?php dynamic_sidebar('undersida');?>   
+								<?php dynamic_sidebar('undersida');?> <!-- hämtar widget från db -->
 								</li>
 							</ul>
 							<?php
@@ -28,4 +28,4 @@
 		</div>
 	</section>
 </main>
-<?php get_footer(); ?>
+<?php get_footer(); ?> <!-- hämtar footer från footer.php -->

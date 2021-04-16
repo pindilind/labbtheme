@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header(); ?> <!-- hämtar header från header.php -->
 <main>
 	<section>
 		<div class="container">
@@ -10,9 +10,9 @@
 					
 					?>
 					<div class="text">
-						<h1><?php the_title(); ?></h1>
-						<?php the_content(); ?>
-						<?php dynamic_sidebar('mejlWidget'); ?>
+						<h1><?php the_title(); ?></h1> <!-- hämtar titeln -->
+						<?php the_content(); ?> <!-- hämtar text -->
+						<?php dynamic_sidebar('mejlWidget'); ?> <!-- hämtar mejlWidget -->
 					</div>
 				</div>
 				<?php 
@@ -22,4 +22,4 @@
 		</div>
 	</section>
 </main>
-<?php get_footer(); ?>
+<?php get_footer(); ?> <!-- hämtar footern från footer.php -->

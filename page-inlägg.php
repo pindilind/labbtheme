@@ -1,4 +1,5 @@
-<?php get_header();?>
+<?php get_header();?> <!-- hämtar headern från header.php-->
+
 		<main>
 			<section>
 				<div class="container">
@@ -20,9 +21,9 @@
 								</ul><p></p>
 							</article>
 						</div>
-						<?php get_sidebar();?>
+						<?php get_sidebar();?> <!-- hämtar sidebaren från sidebar.php -->
 					</div>
 				</div>
 			</section>
 		</main>
-		<?php get_footer();?>
+		<?php get_footer();?> <!-- hämtar footern från footer.php -->

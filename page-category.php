@@ -1,6 +1,6 @@
 
 
-<?php get_header(); ?>
+<?php get_header(); ?> <!-- hämtar headern -->
 <main>
 	<section>
 		<div class="container">
@@ -43,9 +43,9 @@
 						<a class="next page-numbers" href="">Nästa</a>
 					</nav>
 				</div>
-				<?php get_sidebar(); ?>
+				<?php get_sidebar(); ?> <!-- hämtar sidebaren från sidebar.php -->
 			</div>
 		</div>
 	</section>
 </main>
-<?php get_footer(); ?>
+<?php get_footer(); ?> <!-- hämtar footern -->

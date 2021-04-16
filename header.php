@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8" />
     <title>Labb 1</title>
+    <!-- hämtar alla styling-filerna -->
     <link href="<?php echo get_template_directory_uri() . './css/font-awesome.css'; ?>" rel="stylesheet" type="text/css" />
     <link href="<?php echo get_template_directory_uri() . './css/bootstrap.css'; ?>" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/style.css'; ?>">
     <script src="<?php echo get_template_directory_uri() . './js/jquery.js'; ?>"></script>
+    <?php wp_head();?> <!-- skriver ut script/data -->
 </head>
 
 <body>
@@ -56,7 +58,7 @@
 
                         <ul class="menu">
                             <li class="current-menu-item">
-                                <?php
+                                <?php //menyn i header från "meny" i admin
                                 wp_nav_menu(
 
                                     [

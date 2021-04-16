@@ -72,7 +72,7 @@ register_sidebar(
     ]
 ); 
 
-
+//widget för arkiv delen
 register_sidebar(
     [
         'name' => 'arkiv Widget',
@@ -82,6 +82,7 @@ register_sidebar(
     ]
 );
 
+//widget för kategoridelen
 register_sidebar(
     [
         'name' => 'kategori Widget',
@@ -91,6 +92,16 @@ register_sidebar(
     ]
 );
 
+
+//logo-widget
+register_sidebar(
+    [
+        'name' => 'Labb-1',
+        'description' => 'widget för loggan',
+        'id' => 'labbwidget',
+        'before_widget' => ' '
+    ]
+);
 
 /* lägger till CSS-filer, JS-filer*/
 /* add_action('wp_enqueue_scripts', 'min_css_och_js_function');

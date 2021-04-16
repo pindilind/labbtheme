@@ -1,4 +1,4 @@
-<?php get_header();?>
+<?php get_header();?> <!-- hämtar header från header.php -->
 
 		<main>
 			<section>
@@ -81,4 +81,4 @@
 				</div>
 			</section>
 		</main>
-<?php get_footer();?>
+<?php get_footer();?> <!-- hämtar footer från footer.php -->
