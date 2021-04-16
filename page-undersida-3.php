@@ -9,8 +9,8 @@
 					while (have_posts()) { //startar loopen
 						the_post();
 					?>
-						<h1><?php the_title(); ?>banan</h1>
-						<p><?php the_content(); ?>banan</p>
+						<h1><?php the_title(); ?></h1>
+						<p><?php the_content(); ?></p>
 
 					<?php
 					} //avslutar loopen

@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <title>Labb 1</title>
-    <link href="<?php echo get_template_directory_uri() . './font-awesome.css'; ?>" rel="stylesheet" type="text/css" />
-    <link href="<?php echo get_template_directory_uri() . './bootstrap.css'; ?>" rel="stylesheet" type="text/css" />
+    <link href="<?php echo get_template_directory_uri() . './css/font-awesome.css'; ?>" rel="stylesheet" type="text/css" />
+    <link href="<?php echo get_template_directory_uri() . './css/bootstrap.css'; ?>" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/style.css'; ?>">
     <script src="<?php echo get_template_directory_uri() . './js/jquery.js'; ?>"></script>
 </head>
@@ -13,27 +13,21 @@
 <body>
 
     <div id="wrap">
-
+                       
         <header id="header">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-8 col-sm-6">
-
-                        <?php
-                        while (have_posts()) {
-                            the_post();
-                    
-                        ?>
-                        <a class="logo" href="index.html">LABB 1</a>
-                     <?php 
-                        }
-                    ?>
+                    <a class="logo" href="index.html">LABB 1</a>
+            
+                     
                     </div>
 
                     <div class="col-sm-6 hidden-xs">
                     
-                        <?php dynamic_sidebar('sokWidget');?>
-                        
+                    <?php get_search_form(); ?> <!-- hämtar sökrutan från databas -->
+
+                   
                     </div>
                     <div class="col-xs-4 text-right visible-xs">
                         <div class="mobile-menu-wrap">

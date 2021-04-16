@@ -9,29 +9,19 @@
 					while (have_posts()) { //startar loopen
 						the_post();
 					?>
-						<h1><?php the_title(); ?>banan</h1>
-						<p><?php the_content(); ?>banan</p>
+						<h1><?php the_title(); ?></h1>
+						<p><?php the_content(); ?></p>
 
-					<?php
-					} //avslutar loopen
-					?>
+				
+					
 				</div>
 				<aside id="secondary" class="col-xs-12 col-md-3 col-md-pull-9">
-					<ul class="side-menu">
-						<li>
-							<a href="undersida.html">Undersida</a>
-						</li>
-						<li>
-							<a href="undersida2.html">Undersida 2</a>
-						</li>
-						<li>
-							<a href="undersida3.html">Undersida 3</a>
-						</li>
-						<li>
-							<a href="undersida4.html">Undersida 4</a>
-						</li>
-					</ul>
+				<?php dynamic_sidebar('undersida');?>   
+			
 				</aside>
+				<?php
+					} //avslutar loopen
+					?>
 			</div>
 		</div>
 	</section>

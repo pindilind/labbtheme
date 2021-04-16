@@ -13,7 +13,7 @@ while (have_posts()) { //startar loopen
 					<div class="col-xs-12">
 						<div class="hero">
 
-							<img src="<?php echo get_template_directory_uri() . './img/city.jpg' ?>" />
+							<img src="<?php the_post_thumbnail_url()?>" />
 							<div class="text">
 								<h1><?php the_title();  ?></h1>
 								<p><?php the_content(); ?></p>

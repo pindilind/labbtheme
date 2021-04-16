@@ -1,22 +1,25 @@
-<?php get_header();?>-
-		<main>
-			<section>
-				<div class="container">
-					<div class="row">
-						<div class="col-xs-12 col-md-8 col-md-offset-2">
-							<h1>Kontakt</h1>
-							<form>
-								<label>Namn</label>
-								<input type="text" />
-								<label>E-post</label>
-								<input type="email" />
-								<label>Meddelande</label>
-								<textarea></textarea>
-								<input type="submit" value="Skicka" />
-							</form>
-						</div>
+<?php get_header(); ?>
+<main>
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-md-8 col-md-offset-2">
+					<?php
+					while (have_posts()) {
+						the_post(); //startar loop
+					
+					?>
+					<div class="text">
+						<h1><?php the_title(); ?></h1>
+						<?php the_content(); ?>
+						<?php dynamic_sidebar('mejlWidget'); ?>
 					</div>
 				</div>
-			</section>
-		</main>
-<?php get_footer();?>
+				<?php 
+				} //stoppar loop
+				?>
+			</div>
+		</div>
+	</section>
+</main>
+<?php get_footer(); ?>
